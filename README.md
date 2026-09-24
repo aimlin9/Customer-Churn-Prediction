@@ -74,10 +74,6 @@ Three classification models were trained and compared: Logistic Regression, Deci
 
 Models were evaluated using accuracy, precision, recall, F1-score, ROC-AUC, and confusion matrices. Accuracy alone was not used to select the best model due to class imbalance in the target variable.
 
-## Evaluation Metrics
-
-To be added in Week 3.
-
 ## Key Findings
 
 To be added as analysis progresses.
