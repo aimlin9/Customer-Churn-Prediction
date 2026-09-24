@@ -44,11 +44,20 @@ Business Understanding, Data Collection, Data Cleaning, Exploratory Data Analysi
 - Analyzed the target variable distribution: 73.5 percent of customers did not churn, 26.5 percent did churn, indicating a moderate class imbalance that will be accounted for during model evaluation and training
 - Saved the cleaned dataset for use in subsequent stages
 
-**Week 2 onward:** To be completed and documented as the project progresses.
+**Week 2: Exploratory Data Analysis and Feature Engineering (Complete)**
+
+- Generated descriptive statistics for all numerical and categorical variables
+- Produced 8 visualizations analyzing churn patterns across tenure, contract type, payment method, monthly charges, internet service, senior citizen status, numeric correlations, and number of subscribed services
+- Documented 8 key data-driven insights linking customer behavior to churn risk
+- Engineered three new features: NumServices, TenureGroup, and HasInternetService
+- Preprocessed the dataset for modeling: dropped irrelevant identifiers, one-hot encoded categorical variables, scaled numeric features, and separated features from the target variable
+- Saved a machine-learning-ready dataset for use in model development
+
+**Week 3 onward:** To be completed and documented as the project progresses.
 
 ## Exploratory Data Analysis
 
-To be added in Week 2.
+Key findings include a strong link between short tenure, month-to-month contracts, electronic check payments, fiber optic internet, and higher churn rates. Full analysis and visualizations are available in the Week 2 notebook.
 
 ## Machine Learning Models
 
@@ -85,3 +94,6 @@ Customer-Churn-Prediction/
 ├── visuals/
 ├── README.md
 └── requirements.txt
+├── notebooks/
+│   ├── Week1_Business_Model.ipynb
+│   └── Week2_EDA_FeatureEngineering.ipynb
