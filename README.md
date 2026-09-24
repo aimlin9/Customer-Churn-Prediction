@@ -53,15 +53,26 @@ Business Understanding, Data Collection, Data Cleaning, Exploratory Data Analysi
 - Preprocessed the dataset for modeling: dropped irrelevant identifiers, one-hot encoded categorical variables, scaled numeric features, and separated features from the target variable
 - Saved a machine-learning-ready dataset for use in model development
 
-**Week 3 onward:** To be completed and documented as the project progresses.
+**Week 3: Machine Learning Model Development (Complete)**
 
+- Split the dataset into training and testing sets using a stratified split to preserve the churn class distribution
+- Trained a baseline Logistic Regression model and two additional classification models: Decision Tree and Random Forest
+- Evaluated all three models using accuracy, precision, recall, F1-score, ROC-AUC, and confusion matrices
+- Compared all three models in a single comparison table and ROC curve
+- Selected Logistic Regression as the initial best-performing model based on recall, F1-score, and ROC-AUC, not accuracy alone, with the selection treated as provisional pending Week 4 optimization
+
+**Week 4 onward:** To be completed and documented as the project progresses.
 ## Exploratory Data Analysis
 
 Key findings include a strong link between short tenure, month-to-month contracts, electronic check payments, fiber optic internet, and higher churn rates. Full analysis and visualizations are available in the Week 2 notebook.
 
 ## Machine Learning Models
 
-To be added in Week 3.
+Three classification models were trained and compared: Logistic Regression, Decision Tree, and Random Forest. Logistic Regression was selected as the initial best-performing model based on recall, F1-score, and ROC-AUC.
+
+## Evaluation Metrics
+
+Models were evaluated using accuracy, precision, recall, F1-score, ROC-AUC, and confusion matrices. Accuracy alone was not used to select the best model due to class imbalance in the target variable.
 
 ## Evaluation Metrics
 
@@ -96,4 +107,5 @@ Customer-Churn-Prediction/
 └── requirements.txt
 ├── notebooks/
 │   ├── Week1_Business_Model.ipynb
-│   └── Week2_EDA_FeatureEngineering.ipynb
+│   ├── Week2_EDA_FeatureEngineering.ipynb
+│   └── Week3_Model_Development.ipynb
