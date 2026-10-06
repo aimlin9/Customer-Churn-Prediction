@@ -70,18 +70,18 @@ Business Understanding, Data Collection, Data Cleaning, Exploratory Data Analysi
 - Selected class-weighted Logistic Regression as the final model, based on cross-validated recall, ROC-AUC, and interpretability
 
 **Week 5 onward:** To be completed and documented as the project progresses.
+
 ## Exploratory Data Analysis
 
 Key findings include a strong link between short tenure, month-to-month contracts, electronic check payments, fiber optic internet, and higher churn rates. Full analysis and visualizations are available in the Week 2 notebook.
 
 ## Machine Learning Models
 
-Three classification models were trained and compared: Logistic Regression, Decision Tree, and Random Forest. Logistic Regression was selected as the initial best-performing model based on recall, F1-score, and ROC-AUC.
+Three classification models were trained and compared: Logistic Regression, Decision Tree, and Random Forest. Logistic Regression was selected as the initial best-performing model based on recall, F1-score, and ROC-AUC. After class imbalance handling, cross-validation, and hyperparameter tuning in Week 4, class-weighted Logistic Regression was confirmed as the final model.
 
 ## Evaluation Metrics
 
 Models were evaluated using accuracy, precision, recall, F1-score, ROC-AUC, and confusion matrices. Accuracy alone was not used to select the best model due to class imbalance in the target variable.
-
 
 ## Key Findings
 
@@ -93,24 +93,34 @@ To be added in Week 5.
 
 ## How to Run the Project
 
-1. Clone this repository: git clone https://github.com/aimlin9/Customer-Churn-Prediction.git
+1. Clone this repository:
 
-2. Install the required dependencies: pip install -r requirements.txt
+```
+git clone https://github.com/aimlin9/Customer-Churn-Prediction.git
+```
+
+2. Install the required dependencies:
+
+```
+pip install -r requirements.txt
+```
 
 3. Open the notebook in the `notebooks/` directory using Jupyter Notebook or Google Colab.
 
 ## Project Structure
+
+```
 Customer-Churn-Prediction/
 ├── data/
-│ ├── raw_data/
-│ └── processed_data/
+│   ├── raw_data/
+│   └── processed_data/
 ├── notebooks/
-│ └── Week1_Business_Model.ipynb
+│   ├── Week1_Business_Model.ipynb
+│   ├── Week2_EDA_FeatureEngineering.ipynb
+│   ├── Week3_Model_Development.ipynb
+│   └── Week4_Optimization.ipynb
 ├── src/
 ├── visuals/
 ├── README.md
 └── requirements.txt
-├── notebooks/
-│   ├── Week1_Business_Model.ipynb
-│   ├── Week2_EDA_FeatureEngineering.ipynb
-│   └── Week3_Model_Development.ipynb
+```
