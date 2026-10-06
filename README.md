@@ -61,7 +61,15 @@ Business Understanding, Data Collection, Data Cleaning, Exploratory Data Analysi
 - Compared all three models in a single comparison table and ROC curve
 - Selected Logistic Regression as the initial best-performing model based on recall, F1-score, and ROC-AUC, not accuracy alone, with the selection treated as provisional pending Week 4 optimization
 
-**Week 4 onward:** To be completed and documented as the project progresses.
+**Week 4: Class Imbalance Handling and Model Optimization (Complete)**
+
+- Quantified the class imbalance (2.77 non-churners per churner) and linked it to the low recall seen in Week 3
+- Compared class weighting and SMOTE oversampling; class weighting raised Logistic Regression recall from 51.9% to 79.1% without reducing ROC-AUC
+- Applied 5-fold stratified cross-validation to confirm results were consistent across folds
+- Tuned the Decision Tree with GridSearchCV and the Random Forest with RandomizedSearchCV, optimizing for F1-score
+- Selected class-weighted Logistic Regression as the final model, based on cross-validated recall, ROC-AUC, and interpretability
+
+**Week 5 onward:** To be completed and documented as the project progresses.
 ## Exploratory Data Analysis
 
 Key findings include a strong link between short tenure, month-to-month contracts, electronic check payments, fiber optic internet, and higher churn rates. Full analysis and visualizations are available in the Week 2 notebook.
@@ -74,9 +82,6 @@ Three classification models were trained and compared: Logistic Regression, Deci
 
 Models were evaluated using accuracy, precision, recall, F1-score, ROC-AUC, and confusion matrices. Accuracy alone was not used to select the best model due to class imbalance in the target variable.
 
-## Evaluation Metrics
-
-To be added in Week 3.
 
 ## Key Findings
 
